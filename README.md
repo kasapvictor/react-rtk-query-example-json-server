@@ -18,7 +18,7 @@
 > 4. Notify: toastify 
 > 5. Firebase DB
 
-[Preview](https://kasapvictor.github.io/...)
+[Preview](https://kasapvictor.github.io/react-rtk-query-example)
 
 ### Start
 ```bash
