@@ -1,17 +1,23 @@
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import { Container, Typography, Box } from '@mui/material';
+
+import { store } from '@app/store';
+import { Posts } from '@app/features';
 
 export const App = () => {
   return (
-    <Container>
-      <Typography variant="h2">App Component</Typography>
-      <Box>
-        <Button sx={{ marginTop: 10 }} variant="contained">
-          Hello World
-        </Button>
-      </Box>
-    </Container>
+    <Provider store={store}>
+      <Container>
+        <Box sx={{ marginTop: 3 }}>
+          <Typography variant="h2">RTK Query + Local Json Server</Typography>
+        </Box>
+        <Box sx={{ marginTop: 5 }}>
+          <Posts />
+        </Box>
+      </Container>
+
+      <ToastContainer position="bottom-right" />
+    </Provider>
   );
 };
