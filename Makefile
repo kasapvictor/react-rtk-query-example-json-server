@@ -21,5 +21,11 @@ build-dev: pretty lint
 preview:
 	npx vite preview
 
-start:
+run-server:
+	npx json-server -w server/db.json -p 4001
+
+run-project:
 	npx vite --host 0.0.0.0 --port 4000
+
+start:
+	$(MAKE) -j2 run-server run-project
