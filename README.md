@@ -8,6 +8,7 @@
 - Api key from [fortniteapi.io](https://dashboard.fortniteapi.io)
 - Toastify [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
 - Store [React Tracked](https://react-tracked.js.org/docs/tutorial-02/)
+- MUI [Doc](https://mui.com/material-ui/getting-started/usage)
   
 ### Uses: 
 > 1. State react-tracked + useReducer + immer
